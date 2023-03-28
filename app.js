@@ -1,26 +1,15 @@
-// const express = require("express");
-// const routes = require('./routes/index');
-
-// const app = express();
-// const port = 3000;
-
-// app.use('',routes);
-// app.listen(port, () => console.log(`app is running on ${port}!`));
-
 const express = require("express");
 
 const app = express();
+//DELETE OR COMMENT OUT HOST
 // const host = 'localhost';
 const port = 3000;
-
-// app.set("views", "./views");
-// app.set("view engine", "pug");
 
 app.get("/", (req, res) => {
   res.send("hello");
 });
 
-// Listener
+// Listener DELETE OR DONT ADD HOST PARAM IN LISTENER
 app.listen(port, () => {
   console.log(`Budget is listening on port ${port}!`);
 });

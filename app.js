@@ -21,6 +21,6 @@ app.get("/", (req, res) => {
 });
 
 // Listener
-app.listen(port, host, () => {
+app.listen(port, () => {
   console.log(`Budget is listening on port ${port}!`);
 });
